@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+/* Top bar with buttons */
+.top-bar {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 20px;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	/* Ensure padding doesn't push content out of the viewport */
+}
+
+.top-bar .login-button {
+	margin-right: 10px; /* Space between login and register button */
+}
+
+.login-button, .register-button {
+	padding: 10px 20px;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login-button {
+	background-color: #28a745; /* Green */
+	color: white;
+}
+
+.register-button {
+	background-color: #007bff; /* Blue */
+	color: white;
+}
+
+.login-button:hover, .register-button:hover {
+	opacity: 0.9;
+}
+
+/* Divider below the top bar */
+.divider {
+	width: 100%;
+	height: 2px;
+	background-color: #ccc;
+	margin-top: 50px; /* Space for the top bar */
+}
+
+/* Main container for both pages */
+.container {
+	background-color: white;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	margin-top: 120px;
+	/* Increased space to accommodate the fixed top bar */
+	max-width: 800px;
+	text-align: center;
+	margin: 100px auto; /* Center the container */
+}
+
+/* Form fields (for register.jsp) */
+.form-group {
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 10px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 15px; /* Larger padding for bigger input boxes */
+	border: 1px solid #ccc;
+	border-radius: 10px; /* Rounded corners */
+	font-size: 16px; /* Bigger font size */
+}
+
+textarea {
+	resize: vertical; /* Allow vertical resizing */
+}
+
+/* Submit Button for Register Page */
+.submit-button {
+	padding: 15px 30px; /* Larger padding for a bigger button */
+	font-size: 16px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #28a745; /* Same green as main page */
+	color: white;
+}
+
+.submit-button:hover {
+	opacity: 0.9;
+}
+
+/* Back Button for Register Page */
+.back-button {
+	padding: 10px 20px;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #ffa500; /* Orange */
+	color: white;
+}
+
+.back-button:hover {
+	opacity: 0.9;
+}
+
+/* Specific styling for links in main.jsp */
+p a {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
+
+/* Footer (optional, for consistent design across pages) */
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #333;
+	color: white;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/* Success and error message box */
+.message-box {
+    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 800px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.message-box.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Styling the select elements */
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 100%; /* Adjusts width to take the full space of its container */
+    box-sizing: border-box; /* Ensures padding does not affect the width */
+    height: 40px; /* Optional: Increases the height */
+}
+
+/* Optional: Style the option elements */
+option {
+    padding: 10px;
+}
+
+/* Styling the table */
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.item-table th, .item-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.item-table th {
+    background-color: #f4f4f4;
+    font-size: 18px;
+}
+
+.item-table td {
+    font-size: 16px;
+}
+
+/* Styling the buy button */
+.buy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
