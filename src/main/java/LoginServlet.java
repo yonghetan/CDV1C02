@@ -49,7 +49,8 @@ public class LoginServlet extends HttpServlet {
 	    String jdbcURL = "jdbc:mysql://localhost:3306/project_part2_db";
 	    String dbUser = "root";
 	    String dbPassword = "";
-
+	    
+	    //select statement to retrieve login
         String sql = "SELECT * FROM login WHERE username = ? AND password = ? AND active = true";
 
         try {
