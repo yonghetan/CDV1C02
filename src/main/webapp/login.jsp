@@ -12,7 +12,7 @@
 	</div>
 	<div class="divider"></div>
     <div class="container">
-        <h1>Login Page Updated 2</h1>
+        <h1>Login Page Updated 3</h1>
         <c:if test="${not empty errorMessage}">
             <div class="error-message" style="color: red;">
                 ${errorMessage}
